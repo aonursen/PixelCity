@@ -12,7 +12,7 @@ import Foundation
 typealias CompletionHander = (_ success: Bool) -> ()
 
 
-let API_KEY = "6fad1d18ce8ab6e4125d59e761a98633"
+let API_KEY = "*****"
 
 func flickrURL(forApiKey key: String, withAnnotation annotation: DroppablePin, andNumberOfPhotos number: Int) -> String {
     let url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(API_KEY)&lat=\(annotation.coordinate.latitude)&lon=\(annotation.coordinate.longitude)&radius=1&radius_units=mi&per_page=\(number)&format=json&nojsoncallback=1"
